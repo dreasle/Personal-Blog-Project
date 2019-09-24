@@ -3,10 +3,26 @@
     text-align: center;
 }
 
+.blog-post-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* gap: 1rem; */
+    border: 1px yellow solid;
+    height: 100%;
+}
 
+#memademay {
+    height: 30vh;
+    width: 100%;
+    background-image: url(../img/me-garden.jpg);
+    border: 1px red solid;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 #photo-welcome {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     height: 30vh;
     width: 100%;
     background-image: url(../img/me-garden.jpg);
@@ -16,7 +32,7 @@
 }
 
 #photo-maxi-skirt {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     height: 30vh;
     width: 100%;
     background-image: url(../img/me-maxi-skirt.jpg);
@@ -26,11 +42,18 @@
 }
 
 #photo-floral-skirt {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     height: 30vh;
     width: 100%;
     background-image: url(../img/me-flower-skirt.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#older-posts {
+    margin: 1rem;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
 }
