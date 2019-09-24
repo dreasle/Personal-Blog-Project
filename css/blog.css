@@ -1,0 +1,36 @@
+.blog-post {
+    margin: 2rem;
+    text-align: center;
+}
+
+
+
+#photo-welcome {
+    border-radius: 10px;
+    height: 30vh;
+    width: 100%;
+    background-image: url(../img/me-garden.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#photo-maxi-skirt {
+    border-radius: 10px;
+    height: 30vh;
+    width: 100%;
+    background-image: url(../img/me-maxi-skirt.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#photo-floral-skirt {
+    border-radius: 10px;
+    height: 30vh;
+    width: 100%;
+    background-image: url(../img/me-flower-skirt.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

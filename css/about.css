@@ -1,0 +1,18 @@
+h1,
+p {
+    text-align: center;
+}
+
+#about {
+    margin: 1rem;
+}
+
+#photo-me {
+    border-radius: 10px;
+    height: 30vh;
+    width: 100%;
+    background-image: url(../img/me_headshot.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
