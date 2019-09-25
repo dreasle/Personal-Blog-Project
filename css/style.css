@@ -2,10 +2,11 @@
     --primary-color: #784b12;
     --secondary-color: #fffffa;
     --text-color: #555;
+    --text-hover-color: #9fdef1;
+    --background-color: #c8e8f2;
     /* --text-hover-color: #e99fdf; */
     /* --text-hover-color: #fffffa; */
     /* --text-hover-color: #f3f3ae; */
-    --text-hover-color: #9fdef1;
     /* --primary-color: #b82601; */
 }
 
@@ -14,13 +15,17 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--text-color);
-    border: 1px grey solid;
+    /* border: 1px grey solid; */
 }
 
 html,
 body {
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section {
+    background-color: var(--background-color);
 }
 
 #navbar {
@@ -85,20 +90,21 @@ body {
     color: var(--text-hover-color);
 }
 
-#showcase {
-    display: flex;
-    height: 25vh;
-    padding: 0 2rem;
-    /* border: 2px red solid; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    text-align: center;
+#banner {
+    height: 27vw;
     background-image: url('../img/monalucy-banner-narrow.jpg');
-    /* background-image: url('../img/monalucy-banner.jpg'); */
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+}
+
+/* Buttons */
+.btn {
+    color: var(--secondary-color);
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px var(--secondary-color) solid;
+    /* border-radius: 5px; */
+    padding: .5rem 1rem;
 }
 
 footer {

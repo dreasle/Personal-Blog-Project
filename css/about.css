@@ -4,11 +4,11 @@ p {
 }
 
 #about {
-    margin: 1rem;
+    padding: 20px;
 }
 
 #about p {
-    margin: 2.5rem;
+    padding: 30px;
 }
 
 #photo-me {
