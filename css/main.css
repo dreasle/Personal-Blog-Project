@@ -32,7 +32,7 @@
 }
 
 /* Spotlight blog posts */
-#memademay {
+#post-2019-09-27 {
     height: 332px;
     width: 250px;
     background-image: url(../img/me-garden.jpg);
@@ -42,7 +42,7 @@
     border-radius: 5px;
 }
 
-#flowyskirt {
+#post-2019-09-20 {
     height: 332px;
     width: 250px;
     background-image: url(../img/me-flower-skirt.jpg);
@@ -52,7 +52,7 @@
     border-radius: 5px;
 }
 
-#maxiskirt {
+#post-2019-09-13 {
     height: 332px;
     width: 250px;
     background-image: url(../img/me-maxi-skirt.jpg);
