@@ -3,8 +3,15 @@ p {
     text-align: center;
 }
 
+#about-container {
+    padding: 40px 140px;
+}
+
+
 #about {
-    padding: 20px;
+    padding: 40px;
+    background-color: var(--secondary-color);
+    /* border: 1px gray solid; */
 }
 
 #about p {
@@ -15,7 +22,7 @@ p {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 10px;
-    height: 30vh;
+    height: 75vh;
     width: 100%;
     background-image: url(../img/me_headshot.jpg);
     background-size: contain;

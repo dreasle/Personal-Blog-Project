@@ -1,0 +1,40 @@
+.blog-post-container {
+    padding: 40px 140px;
+}
+
+.blog-post {
+    /* display: grid;
+    grid-template-areas:
+        'date date date'
+        't t t'
+        'i i'
+        'p p p'; */
+    padding: 40px;
+    background-color: var(--secondary-color);
+    /* border: 11px gray solid; */
+}
+
+.blog-post-date {
+    /* border: 1px gray solid; */
+    /* grid-area: date; */
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.blog-post-title {
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+#me-maxi-skirt {
+    width: 120px;
+}
+
+#me-flower-skirt {
+    width: 120px;
+}
+
+.blog-post-text {
+    padding-top: 20px;
+}

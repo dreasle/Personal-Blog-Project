@@ -1,39 +1,37 @@
-.card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
-    transition: 0.3s;
-}
-  
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
-}
-
-/* Front page links */
-#blog-posts {
+/* Front page blog spotlight */
+#blog-spotlight {
     padding: 10px 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 0 20px;
     justify-items: center;
 }
-  
-.blog-post {
+
+/* General card layout */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    transition: 0.3s;
     margin: 20px 0;
+    /* border: 5px var(--secondary-color) solid; */
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
 }
 
-.blog-post-content {
+.card-caption {
     padding: 135px 20px;
     text-align: center;
 }
 
-.blog-post-content h4 {
+.card-caption h4 {
     color: var(--secondary-color);
     padding-bottom: 20px;
 }
 
+/* Spotlight blog posts */
 #memademay {
     height: 332px;
     width: 250px;
@@ -64,36 +62,7 @@
     border-radius: 5px;
 }
 
-#photo-welcome {
-    /* border-radius: 10px; */
-    height: 30vh;
-    width: 100%;
-    background-image: url(../img/me-garden.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#photo-maxi-skirt {
-    /* border-radius: 10px; */
-    height: 30vh;
-    width: 100%;
-    background-image: url(../img/me-maxi-skirt.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#photo-floral-skirt {
-    /* border-radius: 10px; */
-    height: 30vh;
-    width: 100%;
-    background-image: url(../img/me-flower-skirt.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
+/* Link to older posts/blog page */
 #older-posts {
     width: 100%;
     text-align: center;
@@ -110,6 +79,7 @@
     color: var(--primary-color);
 }
 
+/* Media queries */
 @media(max-width: 768px) {
     #blog-posts {
         grid-template-columns: repeat(2, 1fr);

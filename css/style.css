@@ -28,6 +28,7 @@ section {
     background-color: var(--background-color);
 }
 
+/* Navigation Bar */
 #navbar {
     display: flex;
 }
@@ -90,6 +91,7 @@ section {
     color: var(--text-hover-color);
 }
 
+/* Banner */
 #banner {
     height: 27vw;
     background-image: url('../img/monalucy-banner-narrow.jpg');
@@ -103,10 +105,15 @@ section {
     text-decoration: none;
     cursor: pointer;
     border: 1px var(--secondary-color) solid;
-    /* border-radius: 5px; */
     padding: .5rem 1rem;
 }
 
+.btn:hover {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
 footer {
     margin: 1rem;
     text-align: center;
