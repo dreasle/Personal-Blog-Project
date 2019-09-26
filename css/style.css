@@ -33,6 +33,14 @@ section {
     display: flex;
 }
 
+.nav-center {
+    flex: 1;
+}
+
+#navbar ul li:hover .icon-social {
+    color: var(--text-hover-color);
+}
+
 #navbar ul {
     list-style: none;
 }
