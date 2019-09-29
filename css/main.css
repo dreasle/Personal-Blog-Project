@@ -1,92 +1,176 @@
-/* Front page blog spotlight */
-#blog-spotlight {
-    padding: 10px 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 0 20px;
-    justify-items: center;
+/* Site-wide design */
+:root {
+    --primary-color: #c8e8f2;
+    --secondary-color: #fffffa;
+    --accent-color: #784b12;
+    --text-color: #555;
+    --border-radius: 2px;
+}
+
+/* Site-wide layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* border: 1px grey solid; */
+}
+
+html {
+    background: var(--secondary-color);
+}
+
+section {
+    background-color: var(--primary-color);
+}
+
+.container {
+    padding: 40px;
+    /* padding: 40px 10vw 20px 10vw; */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+}
+
+.nav-center {
+    flex: 1;
+}
+
+.navbar ul li:hover .icon-social {
+    color: var(--primary-color);
+    background: var(--accent-color);
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    color: var(--text-color);
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Hide nested ul by default */
+.navbar ul li ul {
+    display: none;
+}
+
+.navbar ul li:hover {
+    cursor: pointer;
+    background: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.navbar ul li:hover a {
+    color: var(--primary-color);
+    background: var(--accent-color);
+}
+
+/* Nested dropdown show */
+.navbar ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    margin-top: 1rem;
+}
+
+.navbar ul li:hover ul li {
+    display: block;
+    background: var(--secondary-color);
+}
+
+.navbar ul li:hover ul li a {
+    color: var(--text-color);
+    background: var(--secondary-color);
+}
+
+.navbar ul li:hover ul li:hover {
+    background: var(--accent-color);
+    color: inherit;
+}
+
+.navbar ul li:hover ul li:hover a {
+    color: var(--primary-color);
+    background: var(--accent-color);
+}
+
+/* Banner */
+.banner {
+    height: 27vw;
+    background-image: url('../img/monalucy-banner-narrow.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Buttons */
+.btn {
+    color: var(--secondary-color);
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px var(--secondary-color) solid;
+    background: none;
+    padding: .5rem 1rem;
+}
+
+.btn:hover {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
 }
 
 /* General card layout */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     transition: 0.3s;
-    margin: 20px 0;
+    position: relative;
     /* border: 5px var(--secondary-color) solid; */
 }
   
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 .card-caption {
-    padding: 135px 20px;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
 .card-caption h4 {
+    /* font-size: 2rem; */
     color: var(--secondary-color);
-    padding-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(120, 75, 18, 0.75);
 }
 
-/* Spotlight blog posts */
-#post-2019-09-27 {
-    height: 332px;
-    width: 250px;
-    background-image: url(../img/me-garden.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 5px;
-}
-
-#post-2019-09-20 {
-    height: 332px;
-    width: 250px;
-    background-image: url(../img/me-flower-skirt.jpg);
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center;
-    border-radius: 5px;
-}
-
-#post-2019-09-13 {
-    height: 332px;
-    width: 250px;
-    background-image: url(../img/me-maxi-skirt.jpg);
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center;
-    border-radius: 5px;
-}
-
-/* Link to older posts/blog page */
-#older-posts {
-    width: 100%;
+/* Footer */
+footer {
+    margin: 1rem;
     text-align: center;
-    padding-bottom: 2rem;
-    font-size: 1.2rem; 
 }
 
-#older-posts a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#older-posts a:hover {
-    color: var(--primary-color);
-}
-
-/* Media queries */
-@media(max-width: 768px) {
-    #blog-posts {
-        grid-template-columns: repeat(2, 1fr);
+/* @media(max-width: 600px) {
+    .navbar ul li {
+        display: block;
     }
-}
-@media(max-width: 500px) {
-    #blog-posts {
-        grid-template-columns: 1fr;
+    .navbar ul li:hover {
+        width: 100%;
+        position: relative;
     }
-}
+} */

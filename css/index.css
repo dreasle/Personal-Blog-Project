@@ -1,0 +1,89 @@
+/* Front page blog spotlight */
+#blog-spotlight {
+    display: grid;
+    grid-template-areas: 
+        "p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1"
+        "p2 p2 p2 p2 p2 p2 p3 p3 p3 p3 p3 p3";
+    gap: 40px;
+    justify-items: center;
+}
+
+/* Spotlight blog posts */
+#post-2019-09-27 {
+    grid-area: p1;
+    height: 60vw;
+    width: 100%;
+    /* background-image: url(../img/me-garden.jpg); */
+    background-image: url(../img/temp-sewing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: var(--border-radius);
+}
+
+#post-2019-09-20 {
+    grid-area: p2;
+    height: 60vw;
+    width: 100%;
+    background-image: url(../img/me-flower-skirt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: var(--border-radius);
+}
+
+#post-2019-09-13 {
+    grid-area: p3;
+    height: 60vw;
+    width: 100%;
+    background-image: url(../img/me-maxi-skirt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: var(--border-radius);
+}
+
+/* Link to older posts/blog page */
+#older-posts {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 1.2rem; 
+}
+
+#older-posts a {
+    text-decoration: none;
+    /* color: inherit; */
+}
+
+#older-posts a:hover {
+    color: var(--accent-color);
+}
+
+/* Media queries */
+@media(max-width: 750px) {
+    #blog-spotlight {
+        grid-template-areas: 
+        "p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1"
+        "p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2"
+        "p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3";
+        gap: 20px;
+    }
+    #post-2019-09-20 {
+        height: 120vw;
+    }
+    #post-2019-09-13 {
+        height: 120vw;
+    }
+}
+
+/* @media(max-width: 768px) {
+    #blog-posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 500px) {
+    #blog-posts {
+        grid-template-columns: 1fr;
+    }
+} */

@@ -3,12 +3,6 @@ p {
     text-align: center;
 }
 
-#about-container {
-    padding: 40px 10vw;
-    /* justify-items: center; */
-}
-
-
 #about {
     padding: 35px;
     background-color: var(--secondary-color);

@@ -1,7 +1,3 @@
-.blog-post-container {
-    padding: 40px 10vw 20px 10vw;
-}
-
 .blog-post {
     display: grid;
     gap: 10px;
@@ -30,27 +26,26 @@
     font-size: 1.5rem;
 }
 
-#me-maxi-skirt {
-    grid-area: img1;
-    width: 100%;
-}
-
-#me-flower-skirt {
-    grid-area: img2;
-    width: 100%;
-}
-
 .blog-post-text {
     grid-area: text;
     font-size: 1.2rem;
     padding-top: 15px;
 }
 
+.blog-post-img1 {
+    grid-area: img1;
+    width: 100%;
+}
+
+.blog-post-img2 {
+    grid-area: img2;
+    width: 100%;
+}
+
 /* Navigation */
 .blog-post-nav {
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     display: flex;
-    gap: 10px;
     padding-bottom: 20px;
     justify-content: center;
 }
@@ -60,7 +55,7 @@
 }
 
 .blog-post-nav a:hover i {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .blog-post-nav a .hidden {
