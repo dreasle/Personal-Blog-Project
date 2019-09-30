@@ -13,8 +13,7 @@
     grid-area: p1;
     height: 60vw;
     width: 100%;
-    /* background-image: url(../img/me-garden.jpg); */
-    background-image: url(../img/temp-sewing.jpg);
+    background-image: url(../img/fall-fabric-stash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -25,7 +24,7 @@
     grid-area: p2;
     height: 60vw;
     width: 100%;
-    background-image: url(../img/me-flower-skirt.jpg);
+    background-image: url(../img/copy-of-rtw.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -36,7 +35,7 @@
     grid-area: p3;
     height: 60vw;
     width: 100%;
-    background-image: url(../img/me-maxi-skirt.jpg);
+    background-image: url(../img/piecing-pdf-pattern.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
