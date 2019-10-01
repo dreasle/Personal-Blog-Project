@@ -3,6 +3,7 @@
     --primary-color: #c8e8f2;
     --secondary-color: #fffffa;
     --accent-color: #784b12;
+    --secondary-background-color: rgb(120, 75, 18, 0.75);
     --text-color: #555;
     --border-radius: 2px;
 }
@@ -14,8 +15,6 @@
     box-sizing: border-box;
     color: var(--text-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-    /* border: 1px grey solid; */
 }
 
 html {
@@ -140,7 +139,6 @@ article {
     border-radius: var(--border-radius);
     transition: 0.3s;
     position: relative;
-    /* border: 5px var(--secondary-color) solid; */
 }
   
 .card:hover {
@@ -158,10 +156,9 @@ article {
 }
 
 .card-caption h4 {
-    /* font-size: 2rem; */
     color: var(--secondary-color);
     padding: 20px;
-    background-color: rgb(120, 75, 18, 0.75);
+    background-color: var(--secondary-background-color);
 }
 
 /* Footer */
@@ -180,8 +177,10 @@ footer {
     }
 }
 
-@media(max-width: 380px) {
-    /* Hamburger nav */
-    
+@media(max-width: 370px) {
+    /* Resize fonts for small mobile */
+    .navbar ul {
+        font-size: 0.75rem;
+    }
 
 }
