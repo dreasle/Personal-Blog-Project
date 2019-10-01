@@ -1,24 +1,88 @@
-h1,
-p {
-    text-align: center;
+h1 {
+    padding-bottom: 40px;
 }
 
 #about {
-    padding: 35px;
+    display: grid;
+    grid-template-areas: 
+        "p1 title"
+        "p1 text"
+        "p1 sig";
     background-color: var(--secondary-color);
-    /* border: 1px gray solid; */
+    /* padding: 40px; */
 }
 
-#about p {
-    /* padding: 30px; */
+.about-title {
+    grid-area: title;
+    padding-left: 40px;
 }
 
-#photo-me {
-    /* border-radius: 10px; */
+.about-photo {
+    grid-area: p1;
+}
+
+.about-text {
+    grid-area: text;
+    padding-left: 40px;
+}
+
+.about-sig {
+    grid-area: sig;
+    padding: 40px 0 0 40px;
+}
+
+#about-photo {
     height: 475px;
-    width: 100%;
-    background-image: url(../img/me_headshot.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
+}
+
+/* Media queries */
+@media(max-width: 900px) {
+    #about {
+        grid-template-areas: 
+        "p1"
+        "title"
+        "text"
+        "sig";
+        gap: 0;
+        justify-items: center;
+    }
+    .about-title {
+        padding-top: 40px;
+    }
+}
+
+@media(max-width: 420px) {
+    #about-photo {
+        height: 300px;
+    }
+
+    .about-title {
+        padding-left: 0;
+    }
+
+    .about-text {
+        padding-left: 0;
+    }
+
+    .about-sig {
+        padding: 40px 0 0 0;
+    }
+}
+
+@media(max-width: 360px) {
+    #about-photo {
+        height: 240px;
+    }
+
+    .about-title {
+        padding-left: 0;
+    }
+
+    .about-text {
+        padding-left: 0;
+    }
+
+    .about-sig {
+        padding: 40px 0 0 0;
+    }
 }

@@ -1,58 +1,74 @@
 /* Grid of blog cards */
 #blog-posts {
-    display: grid;
-    /* FIX THIS NUMBER BELOW!!! */
-    /* grid-template-columns: repeat(4, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* grid-template-columns: repeat(auto-fit, 4fr); */
-    gap: 40px;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Blog card */
 .blog-card {
-    height: 60vw;
+    margin-bottom: 40px;
     width: 100%;
-    background-size: cover;
-    /* background-size: contain; */
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-areas: 
+        "img date date"
+        "img title title"
+        "img p p";
+    gap: 10px;
 }
 
-/* Blog cards background images */
-#memademay {
-    background-image: url(../img/me-garden.jpg);
+.blog-post-date {
+    grid-area: date;
 }
 
-#flowyskirt {
-    background-image: url(../img/me-flower-skirt.jpg);
+.blog-post-title {
+    grid-area: title;
+    font-size: 1.5rem;
 }
 
-#maxiskirt {
-    background-image: url(../img/me-maxi-skirt.jpg);
+.blog-post-p {
+    grid-area: p;
 }
 
-#photo-welcome {
-    background-image: url(../img/me-garden.jpg);
+.blog-post-img1 {
+    grid-area: img;
+    width: 100%;
+    /* padding-right: 20px; */
 }
 
-#photo-maxi-skirt {
-    background-image: url(../img/me-maxi-skirt.jpg);
+.blog-post-btn {
+    font-size: .8rem;
+    text-decoration: none;
+    transition: 0.8s;
 }
 
-#photo-floral-skirt {
-    background-image: url(../img/me-flower-skirt.jpg);
+.blog-post-btn:hover {
+    font-size: .82rem;
+    color: var(--accent-color);
 }
 
 /* Media Queries */
-@media(max-width: 768px) {
-    #blog-posts {
-        grid-template-columns: repeat(2, 1fr);
+@media(max-width: 800px) {
+    .blog-card {
+        grid-template-areas: 
+        "img date"
+        "img title"
+        "img p";
+        /* gap: 20px; */
     }
+    /* #blog-posts {
+        grid-template-columns: repeat(2, 1fr);
+    } */
 }
-@media(max-width: 500px) {
-    #blog-posts {
-        grid-template-columns: 1fr;
+
+@media(max-width: 690px) {
+    .blog-card {
+        grid-template-areas: 
+        "img"
+        "date"
+        "title"
+        "p";
+        text-align: center;
+        /* gap: 10px; */
     }
 }

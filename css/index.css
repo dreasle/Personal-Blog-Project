@@ -52,7 +52,7 @@
 
 #older-posts a {
     text-decoration: none;
-    /* color: inherit; */
+    transition: 0.3s;
 }
 
 #older-posts a:hover {
@@ -75,14 +75,3 @@
         height: 120vw;
     }
 }
-
-/* @media(max-width: 768px) {
-    #blog-posts {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media(max-width: 500px) {
-    #blog-posts {
-        grid-template-columns: 1fr;
-    }
-} */
